@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/flowbite/dist/flowbite.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    <header>
+        <div class="header relative">
+            <img src="../public/images/beach1.jpg" alt="" class="w-full h-64 rotate-45">
+            <div class="w-full h-64 bg-gray-950 absolute top-0 left-0 bg-opacity-40">
+
+            </div>
+        </div>
+        <div class=" w-full h-60 bg-gradient-to-r from-gray-900 from-20% via-sky-500 via-50% to-yellow-500">
+
+        </div>
+    </header>
+    <div class="mx-auto w-full flex flex-row">
+        <div class="columns-6 w-full border border-blue-700 flex flex-col">
+            <h2 class="block ">Accordion</h2>
+            <div class="accordion block w-full " id="myaccordion" data-accordion="collapse">
+                <div class="accordion-item">
+                    <h2 class="accordion-heading w-full  bg-blue-600 border-2 border-gray-900 rounded-t-lg " >
+                        <button data-accordion-target="#accordion1" class="flex flex-row justify-between w-full dark:bg-red-600 rounded-t-lg" aria-expanded="true">
+                            <span class="text-gray-300">Vission</span>
+                            <span>+</span>
+                        </button>
+                    </h2>
+                    <div class="accordion-body" id="accordion1" >
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum commodi quos libero. Ad fugit magnam veritatis. Voluptates, eaque quam quasi accusamus ipsa aspernatur quaerat? In ad et quo quisquam dolore.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo provident unde sit corrupti nulla numquam atque, velit rem repellat corporis deleniti! Saepe officiis dolorem tempore obcaecati odio similique? Unde, deleniti.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-heading bg-blue-600 w-full ">
+                        <button class="w-full flex flex-row justify-between text-gray-100" data-accordion-target="#accordion2" aria-expanded="false">
+                            <span class="text-yellow-300">Mission</span>
+                            <span>+</span>
+                        </button>
+                    </h2>
+                    <div class="accordion-body" id="accordion2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati similique laudantium ratione facilis quidem ullam explicabo voluptatem ex culpa amet, itaque, incidunt voluptatum veniam eum. In quis libero ad cum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="columns-6 w-full flex flex-col">
+            <table class="border-2">
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Name</th>
+                        <th>email</th>
+                        <th>address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd:bg-gray-300 odd:text-gray-700 even:bg-gray-700 even:text:gray-100">
+                        <td class="text-center">1</td>
+                        <td>Steve</td>
+                        <td>steve@gmail.com</td>
+                        <td>Mandalay</td>
+                    </tr>
+                    <tr class="odd:bg-gray-300 odd:text-gray-700 even:bg-gray-700 even:text-gray-100">
+                        <td>1</td>
+                        <td>Steve</td>
+                        <td>steve@gmail.com</td>
+                        <td>Mandalay</td>
+                    </tr>
+                    <tr class="odd:bg-gray-300 odd:text-gray-700 even:bg-gray-700 even:text-gray-100">
+                        <td>1</td>
+                        <td>Steve</td>
+                        <td>steve@gmail.com</td>
+                        <td>Mandalay</td>
+                    </tr>
+                    <tr class="odd:bg-gray-300 odd:text-gray-700 even:bg-gray-700 even:text-gray-100">
+                        <td>1</td>
+                        <td>Steve</td>
+                        <td>steve@gmail.com</td>
+                        <td>Mandalay</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div>
+        <ul class="flex flex-row" data-tabs-toggle="#tabpanes">
+            <li class="bg-blue-600 p-4 m-2 ">
+                <button class="text-gray-100" data-tabs-target="#research-pane" role="tab" aria-selected="true"> Research</button>
+                
+            </li>
+            <li class="bg-blue-600 p-4 m-2">
+                <button class="text-gray-100" data-tabs-target="#ojt-pane" role='tab' aria-selected="false">On Job Training</button>
+            </li>
+            <li class="bg-blue-600 p-4 m-2">
+                <button class="text-gray-100" data-tabs-target="#news-pane" role='tab' area-selected="false">News </button>
+            </li>
+        </ul>
+        <div id="tabpanes " class="border-2 border-gray-900 w-full p-4 m-2">
+            <div class="pane1" id="research-pane">
+                <h2>Research pane</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloremque ipsum veritatis provident deleniti quam, voluptate cupiditate earum ratione nihil corrupti est? Iure expedita natus sunt quae rem reiciendis omnis.</p>
+            </div>
+            <div class="pane2" id="ojt-pane">
+                <h2>OJT Pane</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur minus ea ex tempora, modi magnam blanditiis iure impedit eos expedita dolores harum numquam illum assumenda. Sunt at esse error vero.</p>
+            </div>
+            <div class="pane3" id="news-pane">
+                <h2>News Pane</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, laudantium nisi ducimus blanditiis et ea quis optio error! Hic cumque exercitationem similique atque illum mollitia magni vitae, rerum pariatur? Harum.</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-row m-2">
+        <div class="columns-3 flex flex-col w-full border-2 border-gray-500 mr-4">
+            <ul data-tabs-toggle="#tabpanes" class="flex flex-col">
+                <li>
+                    <button data-tabs-target="#pane1" role="tab" aria-selected="true">BA</button>
+                </li>
+                <li>
+                    <button data-tabs-target="#pane2" role="tab" aria-selected="false">MA</button>
+                </li>
+                <li>
+                    <button data-tabs-target="#pane3" role="tab" aria-selected="false">PhD</button>
+                </li>
+            </ul>
+        </div>
+        <div class="columns-9">
+            <div class="tabpanes" id="tabpanes">
+                <div class="pane1" id="pane1">
+                    <h2>Pane 1</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, doloribus ad nobis omnis facere repellat, aut suscipit id corporis earum optio? Repellendus veniam iste praesentium pariatur sed repudiandae quaerat cumque!</p>
+                </div>
+                <div class="pane2" id="pane2">
+                    <h2>Pane 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odio distinctio quia suscipit a accusamus at, impedit placeat reiciendis facilis aut delectus ipsum quis, ad odit nostrum maxime adipisci exercitationem!</p>
+                </div>
+                <div class="pane3" id="pane3">
+                    <h2>Pane 3</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quidem mollitia rerum provident eveniet cupiditate voluptatem, nam beatae ipsam perferendis quo dolorem minus repellat tempore modi impedit consectetur veniam repudiandae!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-full columns-3 border-4 border-baegaungsane bg-baegaungsane h-40">
+        hello
+        
+        <i class="fas fa-pencil-alt text-xs text-black sm:text-3xl md:text-6xl mr-5"></i>
+        <div class="grid grid-cols-3 divide-x divide-gray-200 outline-4 outline-yellow-200 outline-offset-2">
+            <div>0
+                <button class="outline-2 outline-yellow-200 outline-offset-4 bg-gray-300 w-10 hover:ring-4 hover:ring-blue-500 focus:ring-blue-500">click</button>
+                <button class="outline-2 outline-blue-500/50 ">Save Changes</button>
+                <button class="transition duration-150 ease-in-out bg-purple-500">Button A</button>
+                <input type="text" name="name" id="" class=" block w-full border-2 focus:ring-blue-500 focus:ring-4">
+            </div>
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </div>
+    <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+</body>
+</html>
